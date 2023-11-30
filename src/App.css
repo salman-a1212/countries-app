@@ -1,38 +1,32 @@
-.App {
-  text-align: center;
+.light-theme {
+  background-color: hsl(0, 0%, 98%) !important;
+  color: hsl(200, 15%, 8%) !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dark-theme {
+  background-color: hsl(209, 23%, 22%) !important;
+  color: hsl(0, 0%, 100%) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.theme-variant {
+  background-color: hsl(207, 26%, 17%) !important;
+  color: hsl(0, 0%, 100%) !important;
+  .input::placeholder {
+    color: hsl(0, 0%, 100%) !important;
   }
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-select {
+  height: 38px !important;
+  --bs-form-select-bg-img: none !important;
 }
 
-.App-link {
-  color: #61dafb;
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[data-autocompleted] {
+  background-color: transparent !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
